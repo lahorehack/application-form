@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel Login</title>
+    <link rel="shortcut icon" href="https://lahore-hack.nl-ams-1.linodeobjects.com/lahore hackimage.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'CalSans-SemiBold';
+            src: url('https://lahore-hack.nl-ams-1.linodeobjects.com/CalSans-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url('https://lahore-hack.nl-ams-1.linodeobjects.com/application-form-background.png');
+            background-size: cover;
+            font-family: 'CalSans-SemiBold', sans-serif;
+        }
+
+        .modal {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .checkbox:checked + .checkmark {
+            background-color: #3182ce;
+            border-color: #3182ce;
+        }
+
+        .checkbox:checked + .checkmark::after {
+            display: block;
+        }
+
+        .checkmark::after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="modal shadow-lg">
+        <h2 class="text-2xl font-semibold text-center mb-6">Admin Panel Login</h2>
+        <form id="login-form" class="space-y-4">
+            <div>
+                <label for="username" class="block text-sm font-medium">Username</label>
+                <input type="text" id="username" name="username" class="mt-1 block w-full p-2 border rounded-md" required>
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium">Password</label>
+                <input type="password" id="password" name="password" class="mt-1 block w-full p-2 border rounded-md" required>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md mt-4 shadow-lg">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>

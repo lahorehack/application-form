@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/lahorehack/application-form/issues"
   },
-  "homepage": "https://github.com/lahorehack/application-form#readme"
+  "homepage": "https://github.com/lahorehack/application-form#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
