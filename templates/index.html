@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahore Hack Application Form</title>
+    <link rel="shortcut icon" href="https://lahore-hack.nl-ams-1.linodeobjects.com/lahore hackimage.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'CalSans-SemiBold';
+            src: url('https://lahore-hack.nl-ams-1.linodeobjects.com/CalSans-SemiBold.ttf') format('truetype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        body {
+            background-image: url('https://lahore-hack.nl-ams-1.linodeobjects.com/application-form-background.png');
+            background-size: cover;
+            font-family: 'CalSans-SemiBold', sans-serif;
+        }
+
+        .modal {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 0.5rem;
+            padding: 2rem;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .checkbox:checked + .checkmark {
+            background-color: #3182ce;
+            border-color: #3182ce;
+        }
+
+        .checkbox:checked + .checkmark::after {
+            display: block;
+        }
+
+        .checkmark::after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="modal shadow-lg">
+        <h2 class="text-2xl font-semibold text-center mb-6">LAHORE HACK APPLICATION FORM</h2>
+        <form action="#" method="POST" class="space-y-4">
+            <div>
+                <label for="full-name" class="block text-sm font-medium">Full Name</label>
+                <input type="text" id="full-name" name="full-name" class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+            <div>
+                <label for="dob" class="block text-sm font-medium">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+            <div>
+                <label for="parent-name" class="block text-sm font-medium">Parent Name</label>
+                <input type="text" id="parent-name" name="parent-name" class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+            <div>
+                <label for="your-email" class="block text-sm font-medium">Your Email</label>
+                <input type="email" id="your-email" name="your-email" class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+            <div>
+                <label for="parent-email" class="block text-sm font-medium">Parent Email</label>
+                <input type="email" id="parent-email" name="parent-email" class="mt-1 block w-full p-2 border rounded-md">
+            </div>
+            <div class="space-y-2">
+                <div class="flex items-center">
+                    <input type="checkbox" id="under-18" name="under-18" class="checkbox hidden">
+                    <label for="under-18" class="checkmark flex-shrink-0 w-6 h-6 rounded-full border-2 border-gray-300 cursor-pointer required"></label>
+                    <label for="under-18" class="ml-2 text-sm font-medium">I am under 18</label>
+                </div>
+                <p class="text-sm font-medium">You and your parents would sign an event liability form which would be emailed to you and them for security reasons.</p>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md mt-4 shadow-lg">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

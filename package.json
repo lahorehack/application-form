@@ -1,0 +1,23 @@
+{
+  "name": "lahore-hack-application-form",
+  "version": "1.0.0",
+  "description": "Official Repository of Lahore Hack's Application Form and its admin panel.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lahorehack/application-form.git"
+  },
+  "keywords": [
+    "lahore-hack",
+    "application-form"
+  ],
+  "author": "Muhammad Dawood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lahorehack/application-form/issues"
+  },
+  "homepage": "https://github.com/lahorehack/application-form#readme"
+}
